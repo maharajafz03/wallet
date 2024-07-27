@@ -1,3 +1,4 @@
+//import { Link } from "react-router-dom";
 
 
 const Login: React.FC = () => {
@@ -11,9 +12,7 @@ const Login: React.FC = () => {
         // fetching mongodb for authverification
     }
 
-    const signup = () => {
-
-    }
+  
 
 
     return ( 
@@ -34,7 +33,7 @@ const Login: React.FC = () => {
                 <button type="submit">Login</button>
             </form>
             <div>
-                <p>Dont have account just <button onClick={signup}> signup </button></p>
+                {/* <p>Dont have account just  <Link to="/">Singup</Link> </p> */}
             </div>
         </div>
 
