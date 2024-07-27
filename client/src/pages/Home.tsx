@@ -1,5 +1,15 @@
-const Home: React.FC = () => {
-  return <div>Component Content</div>;
-};
+import React from 'react'
 
-export default Home;
+
+const Home: React.FC = () => {
+
+  const name: string = "welcome";
+
+
+  
+  return (
+    <div>{name}</div>
+  )
+}
+
+export default Home
