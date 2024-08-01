@@ -1,5 +1,6 @@
 import React from 'react'
-import Dropdown from './Dropdown';
+import Dropdown from '../components/Network/Dropdown';
+
 
 
 const Home: React.FC = () => {
@@ -13,7 +14,7 @@ const bal: string = "ETH";
 
       {/* -------------------- header------------------- */}
      
-     <Dropdown />
+     <Dropdown /> 
       
 
 

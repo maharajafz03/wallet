@@ -1,28 +1,18 @@
-<<<<<<< HEAD:client/src/pages/auth_screen/Signin.tsx
+import React from "react";
 
 
 
-// type bttn = {
-//     name:string;
-// }
 
 
-const Login: React.FC = () => {
+const Signin: React.FC = () => {
 
     const handelclick = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
         // fetching mongodb for authverification
+    
     }
-=======
-import React, { useState } from "react";
->>>>>>> origin/main:client/src/pages/Login.tsx
-
-const Login: React.FC<{ onSwitch: () => void }> = ({ onSwitch }) => {
-  
-<<<<<<< HEAD:client/src/pages/auth_screen/Signin.tsx
-
-
+    
     return ( 
        
         <div>
@@ -44,15 +34,8 @@ const Login: React.FC<{ onSwitch: () => void }> = ({ onSwitch }) => {
         </div>
 
     )
-=======
-    return (
-    <div>
-      <p>
-        Don't have an account? <button onClick={onSwitch}>Sign Up</button>
-      </p>
-    </div>
-  );
->>>>>>> origin/main:client/src/pages/Login.tsx
+
+    
 };
 
-export default Login;
+export default Signin;
