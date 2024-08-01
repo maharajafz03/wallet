@@ -1,10 +1,12 @@
-//import { Link } from "react-router-dom";
+
+
+
+// type bttn = {
+//     name:string;
+// }
 
 
 const Login: React.FC = () => {
-
-
-
 
     const handelclick = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
@@ -22,7 +24,7 @@ const Login: React.FC = () => {
 
 
             {/* adding wallet name */}
-            <h1>Metamsk</h1>
+            <h1>Metamask</h1>
 
             <form onSubmit={handelclick}>
                 <p>Email</p>
@@ -32,9 +34,7 @@ const Login: React.FC = () => {
                 <input type="password"/>
                 <button type="submit">Login</button>
             </form>
-            <div>
-                {/* <p>Dont have account just  <Link to="/">Singup</Link> </p> */}
-            </div>
+            
         </div>
 
     )

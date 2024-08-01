@@ -1,14 +1,24 @@
 import React from 'react'
+import Dropdown from './Dropdown';
 
 
 const Home: React.FC = () => {
 
-  const name: string = "welcome";
-
+  
+const bal: string = "ETH";
 
   
   return (
-    <div>{name}</div>
+    <div>
+
+      {/* -------------------- header------------------- */}
+     
+     <Dropdown />
+      
+
+
+      <p>subframe</p>
+    </div>
   )
 }
 

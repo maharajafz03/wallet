@@ -1,26 +1,34 @@
-import Login from "./pages/Login";
-import Home from "./pages/Home"
-//import Singup from "./pages/Singup"
-//import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useState } from "react";
+import Authscreen from "./pages/auth_screen/Authscreen";
+import Home from "./pages/Home";
 
 const App: React.FC = () => {
   
+  const [IsUser, SetIsUser] = useState(false)
   
+
+  const result: string = "Admin";
+  
+ const handelstate = () => {
+    
+   if (result === "Admin") {
+    SetIsUser(!false)
+   } else {
+    SetIsUser(false)
+   }
+  } 
+
+
   return (
       
        <div>
-      {/* <Router>
-        <Routes>
-        <Route path="/Singup" element={<Singup />} />
-        </Routes>
-      </Router>
+       
+        { !IsUser ? 
+       <Authscreen />
+           : <Home />
       
-       */}
-        <div>
-          <Home />
-          <Login />
-          {/* <Singup /> */}
-        </div>
+      }
+      <button onClick={handelstate}>Go</button>
       </div>
 
   )

@@ -19,6 +19,8 @@ const ComponentName: React.FC = () => {
   return (
   
       <div>
+        <h1>Metamask</h1>
+        
         <form onSubmit={handelclick}>
           <p>userName</p>
           <input
