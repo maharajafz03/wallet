@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 import { useState } from "react";
 import Authscreen from "./pages/auth_screen/Authscreen";
 import Home from "./pages/Home";
+=======
+//import Login from "./pages/Login";
+//import Home from "./pages/Home"
+import Auth from "./pages/Auth";
+//import Singup from "./pages/Singup"
+//import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+>>>>>>> origin/main
 
 const App: React.FC = () => {
   
@@ -22,6 +30,7 @@ const App: React.FC = () => {
   return (
       
        <div>
+<<<<<<< HEAD
        
         { !IsUser ? 
        <Authscreen />
@@ -29,6 +38,9 @@ const App: React.FC = () => {
       
       }
       <button onClick={handelstate}>Go</button>
+=======
+      <Auth / >
+>>>>>>> origin/main
       </div>
 
   )

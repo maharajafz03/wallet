@@ -1,3 +1,4 @@
+<<<<<<< HEAD:client/src/pages/auth_screen/Signin.tsx
 
 
 
@@ -13,8 +14,13 @@ const Login: React.FC = () => {
 
         // fetching mongodb for authverification
     }
+=======
+import React, { useState } from "react";
+>>>>>>> origin/main:client/src/pages/Login.tsx
 
+const Login: React.FC<{ onSwitch: () => void }> = ({ onSwitch }) => {
   
+<<<<<<< HEAD:client/src/pages/auth_screen/Signin.tsx
 
 
     return ( 
@@ -38,6 +44,15 @@ const Login: React.FC = () => {
         </div>
 
     )
+=======
+    return (
+    <div>
+      <p>
+        Don't have an account? <button onClick={onSwitch}>Sign Up</button>
+      </p>
+    </div>
+  );
+>>>>>>> origin/main:client/src/pages/Login.tsx
 };
 
 export default Login;
